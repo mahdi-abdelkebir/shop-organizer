@@ -105,24 +105,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DatabaseEasyDataSet.cs">
+    <Compile Include="db\DatabaseEasyDataSet.cs">
       <DependentUpon>DatabaseEasyDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DatabaseEasyDataSet.Designer.cs">
+    <Compile Include="db\DatabaseEasyDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DatabaseEasyDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Forms\Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\Form.Designer.cs">
+      <DependentUpon>Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="FunctionsDataSet.cs">
+    <Compile Include="db\FunctionsDataSet.cs">
       <DependentUpon>FunctionsDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="FunctionsDataSet.Designer.cs">
+    <Compile Include="db\FunctionsDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>FunctionsDataSet.xsd</DependentUpon>
@@ -130,8 +130,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shelf.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Form.resx">
+      <DependentUpon>Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -143,26 +143,26 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="DatabaseEasyDataSet.xsc">
+    <None Include="db\DatabaseEasyDataSet.xsc">
       <DependentUpon>DatabaseEasyDataSet.xsd</DependentUpon>
     </None>
-    <None Include="DatabaseEasyDataSet.xsd">
+    <None Include="db\DatabaseEasyDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DatabaseEasyDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DatabaseEasyDataSet.xss">
+    <None Include="db\DatabaseEasyDataSet.xss">
       <DependentUpon>DatabaseEasyDataSet.xsd</DependentUpon>
     </None>
-    <None Include="FunctionsDataSet.xsc">
+    <None Include="db\FunctionsDataSet.xsc">
       <DependentUpon>FunctionsDataSet.xsd</DependentUpon>
     </None>
-    <None Include="FunctionsDataSet.xsd">
+    <None Include="db\FunctionsDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>FunctionsDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="FunctionsDataSet.xss">
+    <None Include="db\FunctionsDataSet.xss">
       <DependentUpon>FunctionsDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />

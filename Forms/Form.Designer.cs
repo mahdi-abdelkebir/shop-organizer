@@ -32,13 +32,11 @@ namespace Project__Making_Life_Easier
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.tableEasyBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.databaseEasyDataSet = new Project__Making_Life_Easier.DatabaseEasyDataSet();
+            this.databaseEasyDataSet = new Project__Making_Life_Easier.db.DatabaseEasyDataSet();
             this.tableFunctionBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.functionsDataSet = new Project__Making_Life_Easier.FunctionsDataSet();
-            this.tableFunctionTableAdapter = new Project__Making_Life_Easier.FunctionsDataSetTableAdapters.TableFunctionTableAdapter();
-            this.functionsDataSet1 = new Project__Making_Life_Easier.FunctionsDataSet();
-            this.functionsDataSet2 = new Project__Making_Life_Easier.FunctionsDataSet();
-            this.tableEasyTableAdapter = new Project__Making_Life_Easier.DatabaseEasyDataSetTableAdapters.TableEasyTableAdapter();
+            this.tableFunctionTableAdapter = new Project__Making_Life_Easier.db.FunctionsDataSetTableAdapters.TableFunctionTableAdapter();
+            this.functionsDataSet = new Project__Making_Life_Easier.db.FunctionsDataSet();
+            this.tableEasyTableAdapter = new Project__Making_Life_Easier.db.DatabaseEasyDataSetTableAdapters.TableEasyTableAdapter();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button20 = new System.Windows.Forms.Button();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
@@ -142,8 +140,6 @@ namespace Project__Making_Life_Easier
             ((System.ComponentModel.ISupportInitialize)(this.databaseEasyDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableFunctionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.functionsDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.functionsDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.functionsDataSet2)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage3.SuspendLayout();
@@ -188,17 +184,6 @@ namespace Project__Making_Life_Easier
             // tableFunctionTableAdapter
             // 
             this.tableFunctionTableAdapter.ClearBeforeFill = true;
-            // 
-            // functionsDataSet1
-            // 
-            this.functionsDataSet1.DataSetName = "FunctionsDataSet";
-            this.functionsDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // functionsDataSet2
-            // 
-            this.functionsDataSet2.DataSetName = "FunctionsDataSet";
-            this.functionsDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // tableEasyTableAdapter
             // 
             this.tableEasyTableAdapter.ClearBeforeFill = true;
@@ -1579,8 +1564,6 @@ namespace Project__Making_Life_Easier
             ((System.ComponentModel.ISupportInitialize)(this.databaseEasyDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableFunctionBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.functionsDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.functionsDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.functionsDataSet2)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
@@ -1608,14 +1591,12 @@ namespace Project__Making_Life_Easier
 
         #endregion
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private DatabaseEasyDataSet databaseEasyDataSet;
+        private db.DatabaseEasyDataSet databaseEasyDataSet;
         private System.Windows.Forms.BindingSource tableEasyBindingSource;
-        private DatabaseEasyDataSetTableAdapters.TableEasyTableAdapter tableEasyTableAdapter;
-        private FunctionsDataSet functionsDataSet;
+        private db.DatabaseEasyDataSetTableAdapters.TableEasyTableAdapter tableEasyTableAdapter;
+        private db.FunctionsDataSet functionsDataSet;
         private System.Windows.Forms.BindingSource tableFunctionBindingSource;
-        private FunctionsDataSetTableAdapters.TableFunctionTableAdapter tableFunctionTableAdapter;
-        private FunctionsDataSet functionsDataSet1;
-        private FunctionsDataSet functionsDataSet2;
+        private db.FunctionsDataSetTableAdapters.TableFunctionTableAdapter tableFunctionTableAdapter;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.RichTextBox richTextBox2;

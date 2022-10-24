@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace Project__Making_Life_Easier {
+namespace Project__Making_Life_Easier.db {
     
     
     /// <summary>
@@ -20,17 +20,17 @@ namespace Project__Making_Life_Easier {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DatabaseEasyDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("FunctionsDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DatabaseEasyDataSet : global::System.Data.DataSet {
+    public partial class FunctionsDataSet : global::System.Data.DataSet {
         
-        private TableEasyDataTable tableTableEasy;
+        private TableFunctionDataTable tableTableFunction;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public DatabaseEasyDataSet() {
+        public FunctionsDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Project__Making_Life_Easier {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected DatabaseEasyDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected FunctionsDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace Project__Making_Life_Easier {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["TableEasy"] != null)) {
-                    base.Tables.Add(new TableEasyDataTable(ds.Tables["TableEasy"]));
+                if ((ds.Tables["TableFunction"] != null)) {
+                    base.Tables.Add(new TableFunctionDataTable(ds.Tables["TableFunction"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Project__Making_Life_Easier {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public TableEasyDataTable TableEasy {
+        public TableFunctionDataTable TableFunction {
             get {
-                return this.tableTableEasy;
+                return this.tableTableFunction;
             }
         }
         
@@ -127,7 +127,7 @@ namespace Project__Making_Life_Easier {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DatabaseEasyDataSet cln = ((DatabaseEasyDataSet)(base.Clone()));
+            FunctionsDataSet cln = ((FunctionsDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace Project__Making_Life_Easier {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["TableEasy"] != null)) {
-                    base.Tables.Add(new TableEasyDataTable(ds.Tables["TableEasy"]));
+                if ((ds.Tables["TableFunction"] != null)) {
+                    base.Tables.Add(new TableFunctionDataTable(ds.Tables["TableFunction"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Project__Making_Life_Easier {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableTableEasy = ((TableEasyDataTable)(base.Tables["TableEasy"]));
+            this.tableTableFunction = ((TableFunctionDataTable)(base.Tables["TableFunction"]));
             if ((initTable == true)) {
-                if ((this.tableTableEasy != null)) {
-                    this.tableTableEasy.InitVars();
+                if ((this.tableTableFunction != null)) {
+                    this.tableTableFunction.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace Project__Making_Life_Easier {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DatabaseEasyDataSet";
+            this.DataSetName = "FunctionsDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DatabaseEasyDataSet.xsd";
+            this.Namespace = "http://tempuri.org/FunctionsDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableTableEasy = new TableEasyDataTable();
-            base.Tables.Add(this.tableTableEasy);
+            this.tableTableFunction = new TableFunctionDataTable();
+            base.Tables.Add(this.tableTableFunction);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeTableEasy() {
+        private bool ShouldSerializeTableFunction() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace Project__Making_Life_Easier {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DatabaseEasyDataSet ds = new DatabaseEasyDataSet();
+            FunctionsDataSet ds = new FunctionsDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,25 +270,23 @@ namespace Project__Making_Life_Easier {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void TableEasyRowChangeEventHandler(object sender, TableEasyRowChangeEvent e);
+        public delegate void TableFunctionRowChangeEventHandler(object sender, TableFunctionRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class TableEasyDataTable : global::System.Data.TypedTableBase<TableEasyRow> {
+        public partial class TableFunctionDataTable : global::System.Data.TypedTableBase<TableFunctionRow> {
             
-            private global::System.Data.DataColumn columnReference;
+            private global::System.Data.DataColumn columnName;
             
-            private global::System.Data.DataColumn columnShelf;
-            
-            private global::System.Data.DataColumn columnRow;
+            private global::System.Data.DataColumn columnFunctionality;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public TableEasyDataTable() {
-                this.TableName = "TableEasy";
+            public TableFunctionDataTable() {
+                this.TableName = "TableFunction";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -296,7 +294,7 @@ namespace Project__Making_Life_Easier {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal TableEasyDataTable(global::System.Data.DataTable table) {
+            internal TableFunctionDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -313,32 +311,24 @@ namespace Project__Making_Life_Easier {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected TableEasyDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected TableFunctionDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn ReferenceColumn {
+            public global::System.Data.DataColumn NameColumn {
                 get {
-                    return this.columnReference;
+                    return this.columnName;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn ShelfColumn {
+            public global::System.Data.DataColumn FunctionalityColumn {
                 get {
-                    return this.columnShelf;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn RowColumn {
-                get {
-                    return this.columnRow;
+                    return this.columnFunctionality;
                 }
             }
             
@@ -353,47 +343,53 @@ namespace Project__Making_Life_Easier {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public TableEasyRow this[int index] {
+            public TableFunctionRow this[int index] {
                 get {
-                    return ((TableEasyRow)(this.Rows[index]));
+                    return ((TableFunctionRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event TableEasyRowChangeEventHandler TableEasyRowChanging;
+            public event TableFunctionRowChangeEventHandler TableFunctionRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event TableEasyRowChangeEventHandler TableEasyRowChanged;
+            public event TableFunctionRowChangeEventHandler TableFunctionRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event TableEasyRowChangeEventHandler TableEasyRowDeleting;
+            public event TableFunctionRowChangeEventHandler TableFunctionRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event TableEasyRowChangeEventHandler TableEasyRowDeleted;
+            public event TableFunctionRowChangeEventHandler TableFunctionRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddTableEasyRow(TableEasyRow row) {
+            public void AddTableFunctionRow(TableFunctionRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public TableEasyRow AddTableEasyRow(string Reference, string Shelf, string Row) {
-                TableEasyRow rowTableEasyRow = ((TableEasyRow)(this.NewRow()));
+            public TableFunctionRow AddTableFunctionRow(string Name, string Functionality) {
+                TableFunctionRow rowTableFunctionRow = ((TableFunctionRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Reference,
-                        Shelf,
-                        Row};
-                rowTableEasyRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowTableEasyRow);
-                return rowTableEasyRow;
+                        Name,
+                        Functionality};
+                rowTableFunctionRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowTableFunctionRow);
+                return rowTableFunctionRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public TableFunctionRow FindByName(string Name) {
+                return ((TableFunctionRow)(this.Rows.Find(new object[] {
+                            Name})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                TableEasyDataTable cln = ((TableEasyDataTable)(base.Clone()));
+                TableFunctionDataTable cln = ((TableFunctionDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -401,54 +397,55 @@ namespace Project__Making_Life_Easier {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new TableEasyDataTable();
+                return new TableFunctionDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnReference = base.Columns["Reference"];
-                this.columnShelf = base.Columns["Shelf"];
-                this.columnRow = base.Columns["Row"];
+                this.columnName = base.Columns["Name"];
+                this.columnFunctionality = base.Columns["Functionality"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnReference = new global::System.Data.DataColumn("Reference", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnReference);
-                this.columnShelf = new global::System.Data.DataColumn("Shelf", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnShelf);
-                this.columnRow = new global::System.Data.DataColumn("Row", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnRow);
-                this.columnShelf.MaxLength = 255;
-                this.columnRow.MaxLength = 255;
+                this.columnName = new global::System.Data.DataColumn("Name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnName);
+                this.columnFunctionality = new global::System.Data.DataColumn("Functionality", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFunctionality);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnName}, true));
+                this.columnName.AllowDBNull = false;
+                this.columnName.Unique = true;
+                this.columnName.MaxLength = 255;
+                this.columnFunctionality.MaxLength = 536870910;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public TableEasyRow NewTableEasyRow() {
-                return ((TableEasyRow)(this.NewRow()));
+            public TableFunctionRow NewTableFunctionRow() {
+                return ((TableFunctionRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new TableEasyRow(builder);
+                return new TableFunctionRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(TableEasyRow);
+                return typeof(TableFunctionRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.TableEasyRowChanged != null)) {
-                    this.TableEasyRowChanged(this, new TableEasyRowChangeEvent(((TableEasyRow)(e.Row)), e.Action));
+                if ((this.TableFunctionRowChanged != null)) {
+                    this.TableFunctionRowChanged(this, new TableFunctionRowChangeEvent(((TableFunctionRow)(e.Row)), e.Action));
                 }
             }
             
@@ -456,8 +453,8 @@ namespace Project__Making_Life_Easier {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.TableEasyRowChanging != null)) {
-                    this.TableEasyRowChanging(this, new TableEasyRowChangeEvent(((TableEasyRow)(e.Row)), e.Action));
+                if ((this.TableFunctionRowChanging != null)) {
+                    this.TableFunctionRowChanging(this, new TableFunctionRowChangeEvent(((TableFunctionRow)(e.Row)), e.Action));
                 }
             }
             
@@ -465,8 +462,8 @@ namespace Project__Making_Life_Easier {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.TableEasyRowDeleted != null)) {
-                    this.TableEasyRowDeleted(this, new TableEasyRowChangeEvent(((TableEasyRow)(e.Row)), e.Action));
+                if ((this.TableFunctionRowDeleted != null)) {
+                    this.TableFunctionRowDeleted(this, new TableFunctionRowChangeEvent(((TableFunctionRow)(e.Row)), e.Action));
                 }
             }
             
@@ -474,14 +471,14 @@ namespace Project__Making_Life_Easier {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.TableEasyRowDeleting != null)) {
-                    this.TableEasyRowDeleting(this, new TableEasyRowChangeEvent(((TableEasyRow)(e.Row)), e.Action));
+                if ((this.TableFunctionRowDeleting != null)) {
+                    this.TableFunctionRowDeleting(this, new TableFunctionRowChangeEvent(((TableFunctionRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveTableEasyRow(TableEasyRow row) {
+            public void RemoveTableFunctionRow(TableFunctionRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -490,7 +487,7 @@ namespace Project__Making_Life_Easier {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DatabaseEasyDataSet ds = new DatabaseEasyDataSet();
+                FunctionsDataSet ds = new FunctionsDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -508,7 +505,7 @@ namespace Project__Making_Life_Easier {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "TableEasyDataTable";
+                attribute2.FixedValue = "TableFunctionDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -552,99 +549,54 @@ namespace Project__Making_Life_Easier {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class TableEasyRow : global::System.Data.DataRow {
+        public partial class TableFunctionRow : global::System.Data.DataRow {
             
-            private TableEasyDataTable tableTableEasy;
+            private TableFunctionDataTable tableTableFunction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal TableEasyRow(global::System.Data.DataRowBuilder rb) : 
+            internal TableFunctionRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableTableEasy = ((TableEasyDataTable)(this.Table));
+                this.tableTableFunction = ((TableFunctionDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Reference {
+            public string Name {
+                get {
+                    return ((string)(this[this.tableTableFunction.NameColumn]));
+                }
+                set {
+                    this[this.tableTableFunction.NameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Functionality {
                 get {
                     try {
-                        return ((string)(this[this.tableTableEasy.ReferenceColumn]));
+                        return ((string)(this[this.tableTableFunction.FunctionalityColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Reference\' in table \'TableEasy\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Functionality\' in table \'TableFunction\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTableEasy.ReferenceColumn] = value;
+                    this[this.tableTableFunction.FunctionalityColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Shelf {
-                get {
-                    try {
-                        return ((string)(this[this.tableTableEasy.ShelfColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Shelf\' in table \'TableEasy\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableTableEasy.ShelfColumn] = value;
-                }
+            public bool IsFunctionalityNull() {
+                return this.IsNull(this.tableTableFunction.FunctionalityColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Row {
-                get {
-                    try {
-                        return ((string)(this[this.tableTableEasy.RowColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Row\' in table \'TableEasy\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableTableEasy.RowColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsReferenceNull() {
-                return this.IsNull(this.tableTableEasy.ReferenceColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetReferenceNull() {
-                this[this.tableTableEasy.ReferenceColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsShelfNull() {
-                return this.IsNull(this.tableTableEasy.ShelfColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetShelfNull() {
-                this[this.tableTableEasy.ShelfColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsRowNull() {
-                return this.IsNull(this.tableTableEasy.RowColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetRowNull() {
-                this[this.tableTableEasy.RowColumn] = global::System.Convert.DBNull;
+            public void SetFunctionalityNull() {
+                this[this.tableTableFunction.FunctionalityColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -652,22 +604,22 @@ namespace Project__Making_Life_Easier {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class TableEasyRowChangeEvent : global::System.EventArgs {
+        public class TableFunctionRowChangeEvent : global::System.EventArgs {
             
-            private TableEasyRow eventRow;
+            private TableFunctionRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public TableEasyRowChangeEvent(TableEasyRow row, global::System.Data.DataRowAction action) {
+            public TableFunctionRowChangeEvent(TableFunctionRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public TableEasyRow Row {
+            public TableFunctionRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -683,7 +635,7 @@ namespace Project__Making_Life_Easier {
         }
     }
 }
-namespace Project__Making_Life_Easier.DatabaseEasyDataSetTableAdapters {
+namespace Project__Making_Life_Easier.db.FunctionsDataSetTableAdapters {
     
     
     /// <summary>
@@ -695,7 +647,7 @@ namespace Project__Making_Life_Easier.DatabaseEasyDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class TableEasyTableAdapter : global::System.ComponentModel.Component {
+    public partial class TableFunctionTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.OleDb.OleDbDataAdapter _adapter;
         
@@ -709,7 +661,7 @@ namespace Project__Making_Life_Easier.DatabaseEasyDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public TableEasyTableAdapter() {
+        public TableFunctionTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -806,82 +758,58 @@ namespace Project__Making_Life_Easier.DatabaseEasyDataSetTableAdapters {
             this._adapter = new global::System.Data.OleDb.OleDbDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "TableEasy";
-            tableMapping.ColumnMappings.Add("Shelf", "Shelf");
-            tableMapping.ColumnMappings.Add("Row", "Row");
-            tableMapping.ColumnMappings.Add("Reference", "Reference");
+            tableMapping.DataSetTable = "TableFunction";
+            tableMapping.ColumnMappings.Add("Name", "Name");
+            tableMapping.ColumnMappings.Add("Functionality", "Functionality");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM Table1\r\nWHERE        (Reference = ?) AND (Shelf = ?) AND (Row = ?)";
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM Table1\r\nWHERE        (Name = ?)";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Reference", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Reference", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Shelf", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Shelf", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Row", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Row", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Name", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Name", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO `Table1` (`Reference`, `Shelf`, `Row`) VALUES (?, ?, ?)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO `Table1` (`Name`, `Functionality`) VALUES (?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Reference", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Reference", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Shelf", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Shelf", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Row", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Row", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Name", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Name", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Functionality", global::System.Data.OleDb.OleDbType.LongVarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Functionality", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE       Table1\r\nSET                Reference = ?, Shelf = ?, Row = ?\r\nWHERE        (Reference = ?)";
+            this._adapter.UpdateCommand.CommandText = "UPDATE `Table1` SET `Name` = ?, `Functionality` = ? WHERE ((`Name` = ?))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Reference", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Reference", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Shelf", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Shelf", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Row", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Row", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Reference", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Reference", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Name", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Name", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Functionality", global::System.Data.OleDb.OleDbType.LongVarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Functionality", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Name", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Name", global::System.Data.DataRowVersion.Original, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::Project__Making_Life_Easier.Properties.Settings.Default.DatabaseEasyConnectionString;
+            this._connection.ConnectionString = global::Project__Making_Life_Easier.Properties.Settings.Default.FunctionsConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[5];
+            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[2];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Reference, Shelf, Row FROM Table1";
+            this._commandCollection[0].CommandText = "SELECT Name, Functionality FROM Table1";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT Reference, Shelf, Row FROM Table1 WHERE (Reference LIKE ? + \'%\')";
+            this._commandCollection[1].CommandText = "SELECT        Name, Functionality\r\nFROM            Table1\r\nWHERE        (Name LIK" +
+                "E ? + \'%\')";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Reference", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Reference", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[2] = new global::System.Data.OleDb.OleDbCommand();
-            this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT Reference, Row, Shelf FROM Table1 WHERE (Shelf LIKE ? + \'%\')";
-            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[2].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Shelf", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Shelf", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[3] = new global::System.Data.OleDb.OleDbCommand();
-            this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = "SELECT Reference, Row, Shelf FROM Table1 WHERE (Shelf LIKE ? + \'%\') AND (Row LIKE" +
-                " ? + \'%\')";
-            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[3].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Shelf", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Shelf", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Row", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Row", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[4] = new global::System.Data.OleDb.OleDbCommand();
-            this._commandCollection[4].Connection = this.Connection;
-            this._commandCollection[4].CommandText = "SELECT Reference, Shelf, Row FROM Table1 WHERE (Reference LIKE ? + \'%\') AND (Shel" +
-                "f LIKE ? + \'%\') AND (Row LIKE ? + \'%\')";
-            this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[4].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Reference", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Reference", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[4].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Shelf", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Shelf", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[4].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Row", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Row", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Name", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Name", global::System.Data.DataRowVersion.Current, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DatabaseEasyDataSet.TableEasyDataTable dataTable) {
+        public virtual int Fill(FunctionsDataSet.TableFunctionDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -894,9 +822,9 @@ namespace Project__Making_Life_Easier.DatabaseEasyDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DatabaseEasyDataSet.TableEasyDataTable GetData() {
+        public virtual FunctionsDataSet.TableFunctionDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DatabaseEasyDataSet.TableEasyDataTable dataTable = new DatabaseEasyDataSet.TableEasyDataTable();
+            FunctionsDataSet.TableFunctionDataTable dataTable = new FunctionsDataSet.TableFunctionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -905,13 +833,13 @@ namespace Project__Making_Life_Easier.DatabaseEasyDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int ByRef(DatabaseEasyDataSet.TableEasyDataTable dataTable, string Reference) {
+        public virtual int ByName(FunctionsDataSet.TableFunctionDataTable dataTable, string Name) {
             this.Adapter.SelectCommand = this.CommandCollection[1];
-            if ((Reference == null)) {
-                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            if ((Name == null)) {
+                throw new global::System.ArgumentNullException("Name");
             }
             else {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(Reference));
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(Name));
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -923,90 +851,15 @@ namespace Project__Making_Life_Easier.DatabaseEasyDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int ByShelf(DatabaseEasyDataSet.TableEasyDataTable dataTable, string Shelf) {
-            this.Adapter.SelectCommand = this.CommandCollection[2];
-            if ((Shelf == null)) {
-                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(Shelf));
-            }
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int ByShelfAndRow(DatabaseEasyDataSet.TableEasyDataTable dataTable, string Shelf, string Row) {
-            this.Adapter.SelectCommand = this.CommandCollection[3];
-            if ((Shelf == null)) {
-                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(Shelf));
-            }
-            if ((Row == null)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(Row));
-            }
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int RowExists(DatabaseEasyDataSet.TableEasyDataTable dataTable, string Reference, string Shelf, string Row) {
-            this.Adapter.SelectCommand = this.CommandCollection[4];
-            if ((Reference == null)) {
-                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(Reference));
-            }
-            if ((Shelf == null)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(Shelf));
-            }
-            if ((Row == null)) {
-                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(Row));
-            }
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DatabaseEasyDataSet.TableEasyDataTable dataTable) {
+        public virtual int Update(FunctionsDataSet.TableFunctionDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DatabaseEasyDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "TableEasy");
+        public virtual int Update(FunctionsDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "TableFunction");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1028,24 +881,12 @@ namespace Project__Making_Life_Easier.DatabaseEasyDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Reference, string Shelf, string Row) {
-            if ((Reference == null)) {
-                this.Adapter.DeleteCommand.Parameters[0].Value = global::System.DBNull.Value;
+        public virtual int Delete(string Name) {
+            if ((Name == null)) {
+                throw new global::System.ArgumentNullException("Name");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Reference));
-            }
-            if ((Shelf == null)) {
-                this.Adapter.DeleteCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Shelf));
-            }
-            if ((Row == null)) {
-                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Row));
+                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Name));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1067,24 +908,18 @@ namespace Project__Making_Life_Easier.DatabaseEasyDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string Reference, string Shelf, string Row) {
-            if ((Reference == null)) {
-                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
+        public virtual int Insert(string Name, string Functionality) {
+            if ((Name == null)) {
+                throw new global::System.ArgumentNullException("Name");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Reference));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Name));
             }
-            if ((Shelf == null)) {
+            if ((Functionality == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Shelf));
-            }
-            if ((Row == null)) {
-                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Row));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Functionality));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1106,30 +941,24 @@ namespace Project__Making_Life_Easier.DatabaseEasyDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Reference, string Shelf, string Row, string Original_Reference) {
-            if ((Reference == null)) {
-                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
+        public virtual int Update(string Name, string Functionality, string Original_Name) {
+            if ((Name == null)) {
+                throw new global::System.ArgumentNullException("Name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Reference));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Name));
             }
-            if ((Shelf == null)) {
+            if ((Functionality == null)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Shelf));
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Functionality));
             }
-            if ((Row == null)) {
-                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Row));
-            }
-            if ((Original_Reference == null)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
+            if ((Original_Name == null)) {
+                throw new global::System.ArgumentNullException("Original_Name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Original_Reference));
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Original_Name));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1146,6 +975,14 @@ namespace Project__Making_Life_Easier.DatabaseEasyDataSetTableAdapters {
                 }
             }
         }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(string Functionality, string Original_Name) {
+            return this.Update(Original_Name, Functionality, Original_Name);
+        }
     }
     
     /// <summary>
@@ -1160,7 +997,7 @@ namespace Project__Making_Life_Easier.DatabaseEasyDataSetTableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
-        private TableEasyTableAdapter _tableEasyTableAdapter;
+        private TableFunctionTableAdapter _tableFunctionTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1182,12 +1019,12 @@ namespace Project__Making_Life_Easier.DatabaseEasyDataSetTableAdapters {
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public TableEasyTableAdapter TableEasyTableAdapter {
+        public TableFunctionTableAdapter TableFunctionTableAdapter {
             get {
-                return this._tableEasyTableAdapter;
+                return this._tableFunctionTableAdapter;
             }
             set {
-                this._tableEasyTableAdapter = value;
+                this._tableFunctionTableAdapter = value;
             }
         }
         
@@ -1210,9 +1047,9 @@ namespace Project__Making_Life_Easier.DatabaseEasyDataSetTableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._tableEasyTableAdapter != null) 
-                            && (this._tableEasyTableAdapter.Connection != null))) {
-                    return this._tableEasyTableAdapter.Connection;
+                if (((this._tableFunctionTableAdapter != null) 
+                            && (this._tableFunctionTableAdapter.Connection != null))) {
+                    return this._tableFunctionTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1227,7 +1064,7 @@ namespace Project__Making_Life_Easier.DatabaseEasyDataSetTableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._tableEasyTableAdapter != null)) {
+                if ((this._tableFunctionTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1239,14 +1076,14 @@ namespace Project__Making_Life_Easier.DatabaseEasyDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(DatabaseEasyDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(FunctionsDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._tableEasyTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.TableEasy.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._tableFunctionTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.TableFunction.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._tableEasyTableAdapter.Update(updatedRows));
+                    result = (result + this._tableFunctionTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1258,13 +1095,13 @@ namespace Project__Making_Life_Easier.DatabaseEasyDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(DatabaseEasyDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(FunctionsDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._tableEasyTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.TableEasy.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._tableFunctionTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.TableFunction.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._tableEasyTableAdapter.Update(addedRows));
+                    result = (result + this._tableFunctionTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1276,13 +1113,13 @@ namespace Project__Making_Life_Easier.DatabaseEasyDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(DatabaseEasyDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(FunctionsDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._tableEasyTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.TableEasy.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._tableFunctionTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.TableFunction.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._tableEasyTableAdapter.Update(deletedRows));
+                    result = (result + this._tableFunctionTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1318,15 +1155,15 @@ namespace Project__Making_Life_Easier.DatabaseEasyDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(DatabaseEasyDataSet dataSet) {
+        public virtual int UpdateAll(FunctionsDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._tableEasyTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._tableEasyTableAdapter.Connection) == false))) {
+            if (((this._tableFunctionTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._tableFunctionTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -1362,13 +1199,13 @@ namespace Project__Making_Life_Easier.DatabaseEasyDataSetTableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._tableEasyTableAdapter != null)) {
-                    revertConnections.Add(this._tableEasyTableAdapter, this._tableEasyTableAdapter.Connection);
-                    this._tableEasyTableAdapter.Connection = ((global::System.Data.OleDb.OleDbConnection)(workConnection));
-                    this._tableEasyTableAdapter.Transaction = ((global::System.Data.OleDb.OleDbTransaction)(workTransaction));
-                    if (this._tableEasyTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._tableEasyTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._tableEasyTableAdapter.Adapter);
+                if ((this._tableFunctionTableAdapter != null)) {
+                    revertConnections.Add(this._tableFunctionTableAdapter, this._tableFunctionTableAdapter.Connection);
+                    this._tableFunctionTableAdapter.Connection = ((global::System.Data.OleDb.OleDbConnection)(workConnection));
+                    this._tableFunctionTableAdapter.Transaction = ((global::System.Data.OleDb.OleDbTransaction)(workTransaction));
+                    if (this._tableFunctionTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._tableFunctionTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._tableFunctionTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1429,9 +1266,9 @@ namespace Project__Making_Life_Easier.DatabaseEasyDataSetTableAdapters {
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._tableEasyTableAdapter != null)) {
-                    this._tableEasyTableAdapter.Connection = ((global::System.Data.OleDb.OleDbConnection)(revertConnections[this._tableEasyTableAdapter]));
-                    this._tableEasyTableAdapter.Transaction = null;
+                if ((this._tableFunctionTableAdapter != null)) {
+                    this._tableFunctionTableAdapter.Connection = ((global::System.Data.OleDb.OleDbConnection)(revertConnections[this._tableFunctionTableAdapter]));
+                    this._tableFunctionTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

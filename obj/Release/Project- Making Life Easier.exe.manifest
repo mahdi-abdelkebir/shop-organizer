@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Project- Making Life Easier.exe" size="1554944">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Project- Making Life Easier.exe" size="1555456">
       <assemblyIdentity name="Project- Making Life Easier" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>O+qpCzHeYhNiCv4kzgYzcpjsZpGMjEb4KhC0jJJbk7I=</dsig:DigestValue>
+        <dsig:DigestValue>IqesGLoxrTIRqCKr7o/FVfDmMjDFOdS12wq+8JU5/oU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
