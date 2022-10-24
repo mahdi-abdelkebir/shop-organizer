@@ -9,12 +9,6 @@ A tool I created because the shop I worked at, had too much products and I was s
 
 <div align="center">
     <img src="./pictures/pic1.PNG" /> 
-</div>
-
-<div align="center">
     <img src="./pictures/pic2.png"  /> 
-</div>
-
-<div align="center">
     <img src="./pictures/pic3.png" /> 
 </div>
