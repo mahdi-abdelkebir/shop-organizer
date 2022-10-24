@@ -1,0 +1,20 @@
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\bin\Release\Resources\Database.accdb
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\bin\Release\Resources\Functions.accdb
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\bin\Release\Project- Making Life Easier.exe.config
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\bin\Release\Project- Making Life Easier.exe.manifest
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\bin\Release\Project- Making Life Easier.application
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\bin\Release\Project- Making Life Easier.exe
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\bin\Release\Project- Making Life Easier.pdb
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\bin\Release\Newtonsoft.Json.dll
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\bin\Release\Newtonsoft.Json.xml
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Release\Project- Making Life Easier.csprojAssemblyReference.cache
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Release\Project__Making_Life_Easier.Form1.resources
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Release\Project__Making_Life_Easier.Properties.Resources.resources
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Release\Project- Making Life Easier.csproj.GenerateResource.cache
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Release\Project- Making Life Easier.csproj.CoreCompileInputs.cache
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Release\Project- Making Life Easier.TrustInfo.xml
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Release\Project- Making Life Easier.exe.manifest
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Release\Project- Making Life Easier.application
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Release\Project- Making Life Easier.csproj.CopyComplete
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Release\Project- Making Life Easier.exe
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Release\Project- Making Life Easier.pdb
