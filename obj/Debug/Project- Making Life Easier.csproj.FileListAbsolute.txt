@@ -1,0 +1,27 @@
+C:\Users\HP\source\repos\Project- Making Life Easier\Project- Making Life Easier\bin\Debug\Project- Making Life Easier.exe.config
+C:\Users\HP\source\repos\Project- Making Life Easier\Project- Making Life Easier\bin\Debug\Project- Making Life Easier.exe
+C:\Users\HP\source\repos\Project- Making Life Easier\Project- Making Life Easier\bin\Debug\Project- Making Life Easier.pdb
+C:\Users\HP\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Debug\Project- Making Life Easier.csprojAssemblyReference.cache
+C:\Users\HP\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Debug\Project__Making_Life_Easier.Properties.Resources.resources
+C:\Users\HP\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Debug\Project- Making Life Easier.csproj.GenerateResource.cache
+C:\Users\HP\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Debug\Project- Making Life Easier.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Debug\Project- Making Life Easier.exe
+C:\Users\HP\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Debug\Project- Making Life Easier.pdb
+C:\Users\HP\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Debug\Project__Making_Life_Easier.Form1.resources
+C:\Users\HP\source\repos\Project- Making Life Easier\Project- Making Life Easier\bin\Debug\Project- Making Life Easier.exe.manifest
+C:\Users\HP\source\repos\Project- Making Life Easier\Project- Making Life Easier\bin\Debug\Project- Making Life Easier.application
+C:\Users\HP\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Debug\Project- Making Life Easier.TrustInfo.xml
+C:\Users\HP\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Debug\Project- Making Life Easier.exe.manifest
+C:\Users\HP\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Debug\Project- Making Life Easier.application
+C:\Users\HP\source\repos\Project- Making Life Easier\Project- Making Life Easier\bin\Debug\Newtonsoft.Json.dll
+C:\Users\HP\source\repos\Project- Making Life Easier\Project- Making Life Easier\bin\Debug\Newtonsoft.Json.xml
+C:\Users\HP\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Debug\Project- Making Life Easier.csproj.CopyComplete
+C:\Users\HP\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Debug\Project__Making_Life_Easier.Form2.resources
+C:\Program Files\Folder\Storage Cave\vb\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Debug\Project- Making Life Easier.csprojAssemblyReference.cache
+C:\Program Files\Folder\Storage Cave\vb\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Debug\Project__Making_Life_Easier.Form1.resources
+C:\Program Files\Folder\Storage Cave\vb\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Debug\Project__Making_Life_Easier.Properties.Resources.resources
+C:\Program Files\Folder\Storage Cave\vb\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Debug\Project- Making Life Easier.csproj.GenerateResource.cache
+C:\Program Files\Folder\Storage Cave\vb\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Debug\Project- Making Life Easier.csproj.CoreCompileInputs.cache
+C:\Program Files\Folder\Storage Cave\vb\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Debug\Project- Making Life Easier.TrustInfo.xml
+C:\Program Files\Folder\Storage Cave\vb\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Debug\Project- Making Life Easier.exe
+C:\Program Files\Folder\Storage Cave\vb\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\Debug\Project- Making Life Easier.pdb

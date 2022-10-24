@@ -1,0 +1,25 @@
+C:\Program Files\Folder\Storage Cave\vb\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\x64\Debug\Project__Making_Life_Easier.Form1.resources
+C:\Program Files\Folder\Storage Cave\vb\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\x64\Debug\Project__Making_Life_Easier.Properties.Resources.resources
+C:\Program Files\Folder\Storage Cave\vb\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\x64\Debug\Project- Making Life Easier.csproj.GenerateResource.cache
+C:\Program Files\Folder\Storage Cave\vb\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\x64\Debug\Project- Making Life Easier.csproj.CoreCompileInputs.cache
+C:\Program Files\Folder\Storage Cave\vb\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\x64\Debug\Project- Making Life Easier.TrustInfo.xml
+C:\Program Files\Folder\Storage Cave\vb\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\x64\Debug\Project- Making Life Easier.exe
+C:\Program Files\Folder\Storage Cave\vb\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\x64\Debug\Project- Making Life Easier.pdb
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\x64\Debug\Project__Making_Life_Easier.Form1.resources
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\x64\Debug\Project__Making_Life_Easier.Properties.Resources.resources
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\x64\Debug\Project- Making Life Easier.csproj.GenerateResource.cache
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\x64\Debug\Project- Making Life Easier.csproj.CoreCompileInputs.cache
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\x64\Debug\Project- Making Life Easier.TrustInfo.xml
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\x64\Debug\Project- Making Life Easier.exe
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\x64\Debug\Project- Making Life Easier.pdb
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\bin\x64\Debug\Project- Making Life Easier.exe.config
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\bin\x64\Debug\Project- Making Life Easier.exe.manifest
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\bin\x64\Debug\Project- Making Life Easier.application
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\bin\x64\Debug\Project- Making Life Easier.exe
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\bin\x64\Debug\Project- Making Life Easier.pdb
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\bin\x64\Debug\Newtonsoft.Json.dll
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\bin\x64\Debug\Newtonsoft.Json.xml
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\x64\Debug\Project- Making Life Easier.csprojAssemblyReference.cache
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\x64\Debug\Project- Making Life Easier.exe.manifest
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\x64\Debug\Project- Making Life Easier.application
+C:\Users\dune2000\source\repos\Project- Making Life Easier\Project- Making Life Easier\obj\x64\Debug\Project- Making Life Easier.csproj.CopyComplete
