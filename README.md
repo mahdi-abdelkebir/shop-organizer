@@ -1,5 +1,5 @@
 # shop-organizer
-A tool I created because the shop I worked at, had too much products and I was simply overwhelmed and couldn't keep up.
+A tool I created because the shop I worked at, had too many products and I was simply overwhelmed and couldn't keep up.
 
 <table cellpadding="0">
   <tr style="padding: 0">
